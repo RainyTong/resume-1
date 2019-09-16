@@ -63,7 +63,9 @@
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textbf{\small#3} & \textbf{\small #4} \\
+%       \textbf{\small#3} & \textbf{\small #4} \\
+      #3 & #4 \\
+      \textbf{\textit{#5}} & \textbf{\textit{#6}}
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -119,12 +121,6 @@
         \resumeItem{Topic}
           {Wildfire detection and prediction based on social media and environmental data.}
         \resumeItem{Content}
-        \begin{itemize}
-        \item Build image classification model using CNN to classify wildfire-related images from tweets based on PyTorch.
-        \item Build text classification model using TextCNN to classify and detect recent wildfire-related tweets based on PyTorch.
-        \item Implement Emotion Classifier based on Event2mind Model from Allennlp.
-        \item Data collection pipeline including crawler, extractor and dumper.
-        \end{itemize}
 %           {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
       \resumeItemListEnd
 
